@@ -218,7 +218,3 @@ class SiteTrendSort(Enum):
 class SubmissionSort(Enum):
     ID = auto()
     ID_DESC = auto()
-
-
-print(AiringSort.EPISODE_DESC)
-print(MediaListSort.UPDATED_TIME_DESC.name)
