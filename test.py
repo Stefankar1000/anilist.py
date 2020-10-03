@@ -3,7 +3,7 @@ from anilist.entities import Anime
 
 
 async def main():
-    print(await Anime.get(1))
+    print(await Anime.get())
 
 
 if __name__ == "__main__":

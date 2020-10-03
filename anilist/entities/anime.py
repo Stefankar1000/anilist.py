@@ -2,8 +2,11 @@ import aiohttp
 
 
 class Anime:
-    async def get(id):
+    async def get(name=None, id=None):
         """Get anime by id"""
+
+        if not any([name, id]):
+            raise AttributeError("Need at least one argument")
 
         url = "https://graphql.anilist.co"
         variables = {"id": id}
